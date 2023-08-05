@@ -66,7 +66,7 @@ if game.PlaceId == 8343259840 then
 		-- #endregion
 
 		function JoinDiscord()  
-			-- setclipboard("https://discord.gg/vwxGwSn8bT")
+			
 			StarterGui:SetCore("SendNotification", {Title = Version; Text = "REDACTED LOADED"; Icon = "rbxassetid://11729490273"; Duration = 10 })
 		end
 
@@ -547,10 +547,10 @@ if game.PlaceId == 8343259840 then
 
 		-- #region // Objects
 
-		--local wlID = loadstring(game:HttpGet("https://raw.githubusercontent.com/poweringc/QContents/main/.getid", true))()
+		--local wlID = loadstring(game:HttpGet("https://raw.githubusercontent.com", true))()
 
-		local Framework                = loadstring(game:HttpGet("https://raw.githubusercontent.com/NougatBitz/Femware-Leak/main/TestUI.lua", true))() -- https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/TestUI
-		local ESPFramework             = loadstring(game:HttpGet("https://raw.githubusercontent.com/NougatBitz/Femware-Leak/main/ESP.lua", true))()
+		local Framework                = loadstring(game:HttpGet("https://raw.githubusercontent.com/5veSpeedz/REDACTED/main/REDACTED_FRAMEWORK", true))() -- https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/TestUI
+		local ESPFramework             = loadstring(game:HttpGet("https://raw.githubusercontent.com/5veSpeedz/REDACTED/main/REDACTED_ESP", true))()
 		local Watermark                = Framework:CreateWatermark("FemWare | {game} | {fps}")
 
 		--if wlID[game.Players.LocalPlayer.UserId] then
@@ -1430,7 +1430,7 @@ if game.PlaceId == 8343259840 then
 		end)
 
 		MainS:AddButton("Melee God Mode", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/NougatBitz/Femware-Leak/main/meleegod.lua", true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/5veSpeedz/REDACTED/main/REDACTED_MELEE", true))()
 		end)
 
 		MainS:AddButton("WallBang", function()
