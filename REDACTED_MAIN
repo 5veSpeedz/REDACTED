@@ -4,7 +4,7 @@ for k,v in pairs(getgc(true)) do
     end
  end
 
-wait(15)
+wait(5)
 
 if game.PlaceId == 8343259840 then
 	local Success, Error = pcall(function()
@@ -42,7 +42,7 @@ if game.PlaceId == 8343259840 then
 
 		-- #region // Variables
 
-		local Settings                          = { GunMods = { NoRecoil = true, InstantEquip = true, Spread = true, AutoMode = false, SpreadAmount = 0 }, DownedChat = false, KillChat = false, DownedMSG = "IM A FEMALE", KillMSG = "", IsDead = true, AutoPickCash = false, AutoPickTools = false, AutoPickScrap = false, InfiniteStamina = false, NoJumpCooldown = false, SpaceJump = false, NoFailLockpick = true, ShowChatLogs = true, NoFlashbang  = false, NoSmoke = false, UnlockDoorsNearby = false, OpenDoorsNearby = false, NoClip = false, FullBright = true, CamFovToggled = false, CamFov = 70, Zoom = 10, InfinitePepperSpray = false, PepperSprayAura = false, WalkSpeed = {Enabled = false, Amount = 30}, JumpPower = {Enabled = false, Amount = 75}, NoBarbwire = false, NoFallDamage = false, NoRagdoll = false, WatermarkOn = false, ViewModel = { Enabled = true, Viewmodel = { Color = Color3.fromRGB(255, 255, 255), Material = Enum.Material.Plastic }, Melees = { Color = Color3.fromRGB(255, 255, 255), Material = Enum.Material.Plastic }, Guns = { Color = Color3.fromRGB(255, 255, 255), Material = Enum.Material.Metal }, LeftArmOff = false }, CustomHitSound = 5043539486, VolumeHitsound = 1, WallBang = false, ElevatorTP = false, TowerTP = false, UIKey = Enum.KeyCode.LeftAlt};
+		local Settings                          = { GunMods = { NoRecoil = false, InstantEquip = false, Spread = true, AutoMode = false, SpreadAmount = 0 }, DownedChat = false, KillChat = false, DownedMSG = "", KillMSG = "", IsDead = true, AutoPickCash = false, AutoPickTools = false, AutoPickScrap = false, InfiniteStamina = false, NoJumpCooldown = false, SpaceJump = false, NoFailLockpick = true, ShowChatLogs = true, NoFlashbang  = false, NoSmoke = false, UnlockDoorsNearby = false, OpenDoorsNearby = false, NoClip = false, FullBright = true, CamFovToggled = false, CamFov = 70, Zoom = 10, InfinitePepperSpray = false, PepperSprayAura = false, WalkSpeed = {Enabled = false, Amount = 30}, JumpPower = {Enabled = false, Amount = 75}, NoBarbwire = false, NoFallDamage = false, NoRagdoll = false, WatermarkOn = true, ViewModel = { Enabled = false, Viewmodel = { Color = Color3.fromRGB(255, 255, 255), Material = Enum.Material.Plastic }, Melees = { Color = Color3.fromRGB(255, 255, 255), Material = Enum.Material.Plastic }, Guns = { Color = Color3.fromRGB(255, 255, 255), Material = Enum.Material.Metal }, LeftArmOff = false }, CustomHitSound = 5043539486, VolumeHitsound = 1, WallBang = false, ElevatorTP = false, TowerTP = false, UIKey = Enum.KeyCode.LeftAlt};
 		local ESPSettings                       = { PlayerESP = { Enabled = true, TracersOn = false, BoxesOn = true, NamesOn = false, DistanceOn = false, HealthOn = false, ToolOn = false, FaceCamOn = false, Distance = 2000 }, ScrapESP = { Enabled = false, Distance = 2000, LegendaryOnly = true, RareOnly = true, GoodOnly = true, BadOnly = true }, SafeESP = { Enabled = false, Distance = 2000, BigOnly = true, SmallOnly = true }, RegisterESP = { Enabled = false, Distance = 2000 }, ESPColor = Color3.fromRGB(255, 255, 255), ToolColor = Color3.fromRGB(255, 255, 255)};
 		local CoolDowns                         = { AutoPickUps = { MoneyCooldown = false, ScrapCooldown = false, ToolCooldown = false } }
 
@@ -69,7 +69,7 @@ if game.PlaceId == 8343259840 then
 
 		function JoinDiscord()  
 			
-			StarterGui:SetCore("SendNotification", {Title = Version; Text = "REDACTED LOADED"; Icon = "rbxassetid://11729490273"; Duration = 10 })
+			StarterGui:SetCore("SendNotification", {Title = Version; Text = "REDACTED LOADED"; Icon = "rbxassetid://11729490188"; Duration = 10 })
 		end
 
 		-- #region Silent Aim Functions
@@ -553,7 +553,7 @@ if game.PlaceId == 8343259840 then
 
 		local Framework                = loadstring(game:HttpGet("https://raw.githubusercontent.com/5veSpeedz/REDACTED/main/REDACTED_FRAMEWORK", true))() -- https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/TestUI
 		local ESPFramework             = loadstring(game:HttpGet("https://raw.githubusercontent.com/5veSpeedz/REDACTED/main/REDACTED_ESP", true))()
-		local Watermark                = Framework:CreateWatermark("FemWare | {game} | {fps}")
+		local Watermark                = Framework:CreateWatermark("REDACTED | {game} | {fps}")
 
 		--if wlID[game.Players.LocalPlayer.UserId] then
 		--FemWare                  = Framework:CreateWindow(Version, Vector2.new(550, 700)) -- 492, 588
@@ -621,25 +621,25 @@ if game.PlaceId == 8343259840 then
 
 		game.Players.PlayerAdded:Connect(function(AdminUserCheck)
 			if AdminUserCheck.UserId == 68246168 or AdminUserCheck.UserId == 955294 or AdminUserCheck.UserId == 1095419 or AdminUserCheck.UserId == 50585425 or AdminUserCheck.UserId == 48405917 or AdminUserCheck.UserId == 9212846 or AdminUserCheck.UserId == 47352513 or AdminUserCheck.UserId == 48058122 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Mod Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Mod Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			elseif AdminUserCheck.UserId == 42066711 or AdminUserCheck.UserId == 513615792 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Contractors Alert\n"..AdminUserCheck.Name..", Is in the server"; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Contractors Alert\n"..AdminUserCheck.Name..", Is in the server"; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			elseif AdminUserCheck.UserId == 151691292 or AdminUserCheck.UserId == 92504899 or AdminUserCheck.UserId == 31967243 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Devs Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Devs Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			elseif AdminUserCheck.UserId == 29761878 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			end
 		end)
 
 		for i, v in pairs(game.Players:GetPlayers()) do
 			if v.UserId == 68246168 or v.UserId == 955294 or v.UserId == 1095419 or v.UserId == 50585425 or v.UserId == 48405917 or v.UserId == 9212846 or v.UserId == 47352513 or v.UserId == 48058122 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Mod Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Mod Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			elseif v.UserId == 42066711 or v.UserId == 513615792 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Contractors Alert\n"..v.Name..", Is in the server"; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Contractors Alert\n"..v.Name..", Is in the server"; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			elseif v.UserId == 151691292 or v.UserId == 92504899 or v.UserId == 31967243 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Devs Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Devs Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			elseif v.UserId == 29761878 then
-				StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+				StarterGui:SetCore("SendNotification", {Title = "REDACTED"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://11729490188"; Duration = 120 })
 			end
 		end
 		-- #endregion
