@@ -1458,7 +1458,7 @@ if game.PlaceId == 8343259840 then
 			ESPFramework:Toggle(ESPSettings.PlayerESP.Enabled)
 		end, "PlayerESPsToggle")
 
-		PlayerESPsToggle:AddKeybind("RightBracket", "PlayerESPsToggle")
+		PlayerESPsToggle:AddKeybind("None", "PlayerESPsToggle")
 
 		PlayerEspS:AddToggle("Boxes", ESPSettings.PlayerESP.BoxesOn, function(V)
 			ESPSettings.PlayerESP.BoxesOn = V
@@ -1568,7 +1568,7 @@ if game.PlaceId == 8343259840 then
 			end
 		end, "SafeESPToggle")
 
-		SafeESPToggle:AddKeybind("LeftBracket", "SafeESPToggle")
+		SafeESPToggle:AddKeybind("None", "SafeESPToggle")
 
 		-- SafeEspS:AddSeperator("Rarity")
 
