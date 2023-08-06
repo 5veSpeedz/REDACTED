@@ -5,7 +5,9 @@ for k,v in pairs(getgc(true)) do
  end
 
 wait(5)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 
+wait(5)
 if game.PlaceId == 8343259840 then
 	local Success, Error = pcall(function()
 		repeat wait() until game:IsLoaded()
