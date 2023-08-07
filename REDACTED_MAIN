@@ -843,7 +843,12 @@ if game.PlaceId == 8343259840 then
 
 		-- #region Chat When Downed
 		Player.CharacterAdded:Connect(function()
-			print("hi")
+			game.ReplicatedStorage.CharStats[Player.Name].Downed.Changed:Connect(function(V)
+				if V == true then
+					if Settings.DownedChat == true then
+						game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Settings.DownedMSG, "All")
+					end
+				end
 			end)
 		end)
 		-- #endregion
